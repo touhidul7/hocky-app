@@ -117,7 +117,7 @@ function getRoleHome(role: string | null) {
     case 'admin': return '/admin';
     case 'staff': return '/staff';
     case 'coach': return '/coach';
-    case 'parent': return '/parent';
+    case 'player': return '/pending';
     default: return '/pending';
   }
 }

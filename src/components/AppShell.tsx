@@ -2,6 +2,7 @@ import { ReactNode, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import { Button } from '@/components/ui/button';
+import { ThemeToggle } from '@/components/ThemeToggle';
 import { cn } from '@/lib/utils';
 import {
   LayoutDashboard, Users, Building2, ClipboardList, Beaker,
@@ -33,8 +34,8 @@ const navByRole: Record<string, NavItem[]> = {
     { href: '/coach/analytics', label: 'Analytics', icon: <Trophy className="h-4 w-4" /> },
     { href: '/coach/reports', label: 'Reports', icon: <ClipboardList className="h-4 w-4" /> },
   ],
-  parent: [
-    { href: '/parent', label: 'My Players', icon: <Users className="h-4 w-4" /> },
+  player: [
+    { href: '/parent', label: 'My Teams', icon: <Users className="h-4 w-4" /> },
   ],
 };
 
@@ -141,6 +142,9 @@ export default function AppShell({ children, title }: AppShellProps) {
             <Menu className="h-5 w-5" />
           </button>
           {title && <h1 className="text-base font-semibold">{title}</h1>}
+          <div className="ml-auto">
+            <ThemeToggle />
+          </div>
         </header>
 
         {/* Content */}

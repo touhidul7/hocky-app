@@ -19,7 +19,7 @@ const roleColors: Record<string, string> = {
   admin: 'bg-destructive/10 text-destructive border-destructive/30',
   staff: 'bg-primary/10 text-primary border-primary/30',
   coach: 'bg-accent/10 text-accent border-accent/30',
-  parent: 'bg-success/10 text-success border-success/30',
+  player: 'bg-success/10 text-success border-success/30',
 };
 
 export default function AdminUsers() {
@@ -74,7 +74,7 @@ export default function AdminUsers() {
                       <SelectItem value="admin">Admin</SelectItem>
                       <SelectItem value="staff">Staff</SelectItem>
                       <SelectItem value="coach">Coach</SelectItem>
-                      <SelectItem value="parent">Parent</SelectItem>
+                      <SelectItem value="player">Player</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
