@@ -73,7 +73,7 @@ export default function AppShell({ children, title }: AppShellProps) {
             </svg>
           </div>
           <div>
-            <div className="text-sidebar-primary-foreground font-bold text-sm leading-none">IceMetrics</div>
+            <div className="text-sidebar-primary-foreground font-bold text-sm leading-none">Hockey App</div>
             <div className="text-sidebar-foreground text-xs mt-0.5">{roleLabel} Portal</div>
           </div>
           <button

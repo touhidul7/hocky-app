@@ -54,7 +54,7 @@ export default function Auth() {
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
             </svg>
           </div>
-          <h1 className="text-3xl font-bold text-white">IceMetrics</h1>
+          <h1 className="text-3xl font-bold text-white">Hockey App</h1>
           <p className="text-sidebar-foreground mt-1">Hockey Assessment Platform</p>
         </div>
         <Card>
